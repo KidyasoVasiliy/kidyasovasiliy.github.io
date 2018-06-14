@@ -1,0 +1,20 @@
+body {
+  font-family: Tahoma, sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  -webkit-transform: translateY(50px);
+  transform: translateY(50px);
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9fZm9udHMuc2FzcyIsInN0eWxlLnNhc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQyxnQ0FBK0IsRUFBRzs7QUNBbkM7RUFDQyx1QkFBc0I7RUFDdEIsWUFBVztFQUNYLG9DQUEyQjtFQUEzQiw0QkFBMkIsRUFBRzs7QUFFL0I7RUFDQyxtQkFBa0IsRUFBRzs7QUFFdEI7RUFDQyxnQkFBZSxFQUFHIiwiZmlsZSI6InN0eWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbImJvZHkge1xuXHRmb250LWZhbWlseTogVGFob21hLCBzYW5zLXNlcmlmOyB9XG4iLCJAaW1wb3J0IFwiX19mb250cy5zYXNzXCI7XG5ib2R5IHtcblx0YmFja2dyb3VuZC1jb2xvcjogIzAwMDtcblx0Y29sb3I6ICNmZmY7XG5cdHRyYW5zZm9ybTogdHJhbnNsYXRlWSg1MHB4KTsgfVxuXG5oMSB7XG5cdHRleHQtYWxpZ246IGNlbnRlcjsgfVxuXG5wIHtcblx0Zm9udC1zaXplOiAxNHB4OyB9XG4iXX0= */
