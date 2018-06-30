@@ -1,1 +1,0 @@
-import mainSlider from './'
