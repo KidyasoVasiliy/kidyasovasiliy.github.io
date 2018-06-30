@@ -35,10 +35,10 @@ function mainSlider() {
 		}
 
 		function autoSlide(){
-			setTimeout(()=>{
+			setTimeout( () => {
 				plusSliders(1);
-			},3000);
-			setTimeout(autoSlide,3000);
+			}, 3000);
+			setTimeout(autoSlide, 3000);
 		}
 		autoSlide();
 
