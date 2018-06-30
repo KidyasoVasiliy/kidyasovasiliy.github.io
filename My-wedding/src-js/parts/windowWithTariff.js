@@ -10,22 +10,24 @@ function windowWithTariff() {
 		//кнопка закрыть
 		closeBtnForm 	= document.querySelector('.js-overlay-thank-you .popup-close');
 
-	basicBtn.onclick = () => {						// открываем форму с отмеченным input(соот. кнопке) 
+
+
+	basicBtn.onclick = () => {							// открываем форму с отмеченным input(соот. кнопке) 
 		openForm();
 		popupRadio[0].checked="checked";
 	};
 
-	silverBtn.onclick = () => {						// открываем форму с отмеченным input(соот. кнопке) 
+	silverBtn.onclick = () => {							// открываем форму с отмеченным input(соот. кнопке) 
 		openForm();
 		popupRadio[1].checked="checked";
 	};
 
-	goldBtn.onclick = () => {						// открываем форму с отмеченным input(соот. кнопке) 
+	goldBtn.onclick = () => {							// открываем форму с отмеченным input(соот. кнопке) 
 		openForm();
 		popupRadio[2].checked="checked";
 	};
- 	
- 	closeBtnForm.addEventListener('click', () => {	// закрываем форму, если клик на крестик
+
+ 	closeBtnForm.addEventListener('click', () => {		// закрываем форму, если клик на крестик
  		closeForm();
  	});
 
@@ -37,6 +39,7 @@ function windowWithTariff() {
 		overlayThankYou.style.display = 'block';
 		document.body.style.overflow = 'hidden';
 		eventOutside();
+		zeroAjax();
 	}
 	function closeForm() {							// func Закрываем форму, если клик на крестик
 		overlayThankYou.style.display = 'none';
@@ -48,5 +51,10 @@ function windowWithTariff() {
 		};
 	}
 
+
+	function zeroAjax(){
+		console.log('обнуляем форму заказа');
+		document.querySelector('.js-overlay-popup .popup-form').style.display = 'block';
+	}
 }
 export default windowWithTariff;

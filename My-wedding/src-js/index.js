@@ -7,6 +7,7 @@
 	import scrollFooter from './parts/scrollFooter.js';
 	import authorizationMask from './parts/authorizationMask.js';
 	import authorizationAjax from './parts/authorizationAjax.js';
+	import orderAjax from './parts/orderAjax.js';
 
 
 	mainSlider();
@@ -17,3 +18,4 @@
 	scrollFooter();
 	authorizationMask();
 	authorizationAjax();
+	orderAjax();

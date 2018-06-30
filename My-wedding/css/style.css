@@ -4296,3 +4296,7 @@ svg:active {
   padding-bottom: 10px;
 }
 /*Оповещение о регистрации по форме*/
+
+.popup-form-header{
+  text-align: center;
+}

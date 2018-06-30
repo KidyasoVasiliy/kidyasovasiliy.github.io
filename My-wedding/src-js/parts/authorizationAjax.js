@@ -4,13 +4,14 @@ function authorizationAjax() {
 
 	let form	= document.querySelector('.popup-form_form'),
 		inputs 	= document.querySelectorAll('.popup-form-box input'),//[1,2,3];
-		popupFormForm = document.querySelector('.popup-form_form'),
+		popupFormForm = document.querySelector('.popup .popup-form_form'),
 
 		loading = document.querySelector('.loading-modal'),
 		thank 	= document.querySelector('.thank-modal'),
 		failure = document.querySelector('.failure-modal');
 
-
+		// popupFormForm.style.display = 'block';
+		
 		form.addEventListener('submit', function(event){
 			event.preventDefault();
 
@@ -34,13 +35,13 @@ function authorizationAjax() {
 							thank.style.display = 'block';
 							popupFormForm.style.display = 'none';
 							loading.style.display = 'none';
-							}, 2000)
+							}, 1500)
 					} else {
 						setTimeout(()=>{
 							failure.style.display = 'block';
 							popupFormForm.style.display = 'none';
 							loading.style.display = 'none';
-							}, 2000)
+							}, 1500)
 						}
 				}
 			};

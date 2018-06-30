@@ -5,9 +5,16 @@ function authorizationMask() {
 	popupFormBox[0].onkeyup = function(input) {  						// Проверка на ввод только Русских букв
 		return this.value = this.value.replace(/[^а-я, А-Я]/g, '');
 	};
+	popupFormBox[3].onkeyup = function(input) {  						// Проверка на ввод только Русских букв
+		return this.value = this.value.replace(/[^а-я, А-Я]/g, '');
+	};
 
-	let input = popupFormBox[1]; 										// Проверка на ввод номера телефона
-	input.addEventListener('input', mask, false)
+	// console.log(popupFormBox)
+
+	let inputReg = popupFormBox[1],										// Проверка на ввод номера телефона регистрации(войти)
+		inputOrder =   popupFormBox[4];									// Проверка на ввод номера телефона	заказать
+	inputReg.addEventListener('input', mask, false);
+	inputOrder.addEventListener('input', mask, false);
 
 		function mask(event) {
 		    let matrix = this.defaultValue,

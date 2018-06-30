@@ -5,12 +5,18 @@ function getIntoTheAccount() {
 		headerGetInThAcBtn 	= document.querySelector('.header-login__button'),
 		footerGetInThAcBtn 	= document.querySelector('.footer-login__button'),
 		//кнопка закрыть
-		closeBtnForm 		= document.querySelector('.popup-close');
+		closeBtnForm 		= document.querySelector('.popup-close'),
+		loading = document.querySelector('.loading-modal'),
+		thank = document.querySelector('.thank-modal'),
+		failure = document.querySelector('.failure-modal');
+
 
 	headerGetInThAcBtn.onclick = ()=> { 	// открываем форму, если клик в header-"Войти"
+		zeroAjax();
 		openForm();
 	};
 	footerGetInThAcBtn.onclick = ()=> { 	// открываем форму, если клик в footer-"Войти"
+		zeroAjax();
 		openForm();
 	};
 	closeBtnForm.onclick = () => { 			// закрываем форму, если клик на крестик
@@ -33,8 +39,15 @@ function getIntoTheAccount() {
 			if (e.path.length===5) {closeForm();}
 		};
 	}
-	//AJAX
-	// ...body
+
+	function zeroAjax(){
+		console.log('обнуляем форму входа/регистрации');
+		document.querySelector('.popup-form').style.backgroundColor = "#fff"
+		document.querySelector('.popup .popup-form_form').style.display = 'block';
+		loading.style.display = 'none';
+		thank.style.display = 'none';
+		failure.style.display = 'none';
+	}
 }
 
 export default getIntoTheAccount;
