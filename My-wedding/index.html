@@ -635,8 +635,8 @@
               Авторизация
             </div>
             <div class="popup-form-box">
-              <input class="popup-form-box-text popup-form-box-text__name" type="text" name="text-input" id="popup-image-name" placeholder="Ваше имя" required>
-              <input class="popup-form-box-text popup-form-box-text__phone" type="tel" name="phone" id="popup-image-phone" placeholder="Номер телефона" required="required">
+              <input class="popup-form-box-text popup-form-box-text__name" type="text" name="text-input" id="popup-image-name" placeholder="Ваше имя" required maxlength="50">
+              <input class="popup-form-box-text popup-form-box-text__phone" type="tel" name="phone" id="popup-image-phone" placeholder="Номер телефона" required="required" value="+7(___)___-____">
               <input class="popup-form-box-text popup-form-box-text-o popup-form-box-text__email" type="text" name="text-input" id="popup-image-email"  placeholder="Е-mail" required>
             </div>
             <!-- /.popup-form-box -->
@@ -653,6 +653,21 @@
               Забыли пароль?
             </div>
           </form>
+          <div class="thank-modal">
+            <h3 class="thank-modal__title">Спасибо за заявку</h3>
+            <p class="thank-modal__subtitle">Скоро мы с вами свяжемся!</p>
+            <img src="img/modal/checked.png" alt="successs" class="thank-modal__img">
+          </div>
+          <div class="loading-modal">
+            <h3 class="loading-modal__title">Загрузка</h3>
+            <p class="loading-modal__subtitle">Пожалуйста, подождите...</p>
+            <img src="img/modal/loader.gif" alt="loading" class="loading-modal__img">
+          </div>
+          <div class="failure-modal">
+            <h3 class="failure-modal__title">Ошибка</h3>
+            <p class="failure-modal__subtitle">Что-то пошло не так...</p>
+            <img src="img/modal/failure.png" alt="error" class="failure-modal__img">
+          </div>
         </div>
         <!-- /.popup-form -->
       </div>

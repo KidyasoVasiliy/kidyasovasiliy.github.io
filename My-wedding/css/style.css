@@ -4281,3 +4281,18 @@ svg:active {
     margin-top: 30px;
   }
 }
+
+
+/*Оповещение о регистрации по форме*/
+.thank-modal, .loading-modal, .failure-modal{
+  display: none;
+  font-size: 25px;
+  color: #000;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.thank-modal__subtitle, .loading-modal__subtitle, .failure-modal__subtitle{
+  padding-bottom: 10px;
+}
+/*Оповещение о регистрации по форме*/
