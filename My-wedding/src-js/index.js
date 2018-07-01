@@ -8,6 +8,7 @@
 	import authorizationMask from './parts/authorizationMask.js';
 	import authorizationAjax from './parts/authorizationAjax.js';
 	import orderAjax from './parts/orderAjax.js';
+	import youtube from './parts/youtube.js';
 
 
 	mainSlider();
@@ -19,3 +20,4 @@
 	authorizationMask();
 	authorizationAjax();
 	orderAjax();
+	youtube();
