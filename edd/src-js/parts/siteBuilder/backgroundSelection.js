@@ -14,24 +14,38 @@ function backgroundSelection(){
 			let target 	= event.target,
 				i_path = target.getAttribute('src');
 
-		newEl.innerHTML = ('<div id="overlay"></div><div id="magnify"><img src="' + i_path + '"><div id="close-popup"><i></i></div></div>');
-		bodySiteBuilder[0].insertBefore(newEl,bodySiteBuilder[0].children[0]);
+			newEl.innerHTML = ('<div id="overlay"></div><div id="magnify"><img src="' + i_path + '"><div id="close-popup"><i></i></div></div>');
+			bodySiteBuilder[0].insertBefore(newEl,bodySiteBuilder[0].children[0]);
+
 			let magnify = document.querySelectorAll('#magnify'),
 				overlay = document.querySelectorAll('#overlay'),
 				closePopup = document.querySelector('#magnify #close-popup i');
-
+				
 			bodySiteBuilder[0].style.overflow = 'hidden';
 			magnify[0].style.display = 'block';
 			overlay[0].style.display = 'block';
-			closePopup.onclick = function() {
-				bodySiteBuilder[0].style.overflow = '';
-				magnify[0].style.display = 'none';
-				overlay[0].style.display = 'none';
+			
+			function closePopupFunc(){
+					bodySiteBuilder[0].style.overflow = '';
+					magnify[0].style.display = 'none';
+					overlay[0].style.display = 'none';
+				}
+			closePopup.onclick = () => {
+				closePopupFunc();
 			}
+			overlay[0].onclick = (e) => {
+				if (e.path.length===6) {  
+					closePopupFunc()  
+				}
+			}
+
 		}
-
-
 	}
+
+
+
+	
+
 }
 export default backgroundSelection;
 
