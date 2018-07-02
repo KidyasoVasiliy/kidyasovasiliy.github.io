@@ -1,26 +1,26 @@
 let path = require('path');
 
 let conf = {
-	entry : './src-js/builder.js',
+	entry : './src-js/index.js',
 	output : {
 		path : path.resolve(__dirname, './dist-js/'),
-		filename : 'builder.js',
+		filename : 'main.js',
 		publicPath : 'dist-js/'
 	},//default sitting 
 	devServer : {
 		overlay : true
 	},
+	// module: {
+	// 	rules: [
+	// 		{
+	// 			test: /\.js$/,
+	// 			loader: 'babel-loader'
+	// 			// exclude : '/node_modules'
+	// 		}
+	// 	]
+	// },
 	watch: true,
-	devtool: 'eval',
-	module: {
-		rules: [
-			{
-				test: /\.js$/,
-				loader: 'babel-loader'
-				// exclude : '/node_modules'
-			}
-		]
-	}
+	devtool: 'eval'
 };
 
 module.exports = conf; 

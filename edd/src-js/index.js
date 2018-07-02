@@ -10,6 +10,8 @@
 	import orderAjax from './parts/orderAjax.js';
 	import youtube from './parts/youtube.js';
 	import mainFormAjax from './parts/mainFormAjax.js';
+	
+
 
 
 	mainSlider();

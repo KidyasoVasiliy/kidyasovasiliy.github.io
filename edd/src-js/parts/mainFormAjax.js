@@ -1,6 +1,5 @@
 function mainFormAjax() {
 
-	console.log(document.querySelector('.form-box-button button'))
 	let form	= document.querySelector('.form-group'),
 		formGroupOff = form.querySelectorAll('.form-group-box'),
 		mainFormBox = formGroupOff[0].querySelectorAll('.form-box input'),

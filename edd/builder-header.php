@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- Custom -->
-    
+    <!-- Scripts -->
+    <!-- <script src="dist-js/builder.js"></script> -->
+
    </head>
     
   <body>

@@ -12,7 +12,6 @@ function youtube(){
 			frameVideo.style.display = 'block';
 		}, 400);
 	})
-
 	
 }
 export default youtube;

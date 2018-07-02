@@ -2651,10 +2651,12 @@ svg:active {
   max-width: 600px;
   height: auto;
   z-index: 9999;
+  top: 33%;
+  left: 33%;
 }
 
 #magnify img {
-  width: 100%;
+  width: 450px;
 }
 
 #overlay {

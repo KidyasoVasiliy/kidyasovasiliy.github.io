@@ -16,7 +16,16 @@
 
     <!-- Custom -->
     <link rel="stylesheet" href="css/style.css">  
-    
+
+    <!-- Яндекс карты -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+    <!-- Google карты -->
+<!-- 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCWifSuhDFS2h_R6JIAkqhISsSFFSPPmA&libraries=places"></script> -->
+	
+    <!-- Scripts -->
+	<script async src="dist-js/location.js"></script>
+
   </head>
 
   <body>
@@ -1100,7 +1109,9 @@
             </div>
             <!-- /.location-button -->
           </div>
-          <div id="map" class="location-map"></div>
+          <div id="mapYandex" class="location-map"></div>
+          <div id="mapGoogle" class="location-map" style="display: none;">
+          </div>
 
           <form class="form-location">
             <div class="form-location-box">
@@ -1169,6 +1180,5 @@
       &#169; 2018 «MY WEDDING» Все права защищены
     </footer>
     <!-- /.footer -->
-
   </body>
 </html>
