@@ -142,7 +142,6 @@
 			  </div>
 			  <!-- /.container -->
 			    <!-- Scripts -->
-    <script src="dist-js/builder.js"></script>
       </section>
 
 <?php include 'builder-footer.php'; ?>

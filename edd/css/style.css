@@ -2659,7 +2659,7 @@ svg:active {
   width: 450px;
 }
 
-#overlay {
+#overlay{
   display: none;
   background: #000;
   position: fixed;
@@ -2670,6 +2670,18 @@ svg:active {
   opacity: 0.5;
   z-index: 9990;
 }
+/*----------------------------------------------*/
+.overlayNew {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,.9);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 9990;
+}
+/*----------------------------------------------*/
 
 #close-popup {
   width: 30px;
@@ -4329,3 +4341,19 @@ svg:active {
 .popup-form-header{
   text-align: center;
 }
+
+/*-----------------------нпуты для заполнения приглашений-----------------------*/
+.inputInvitation{
+  height: 20%;
+  margin: 2% auto;
+  width: 94%;
+  text-align: center;
+  /*font-size: 18px;*/
+  border-radius: 10%;
+  border-bottom-left-radius: 160%;
+  border-bottom-right-radius: 30%;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 160%;
+  border: 1px solid #F8708C;
+}
+/*-----------------------инпуты для заполнения приглашений-----------------------*/

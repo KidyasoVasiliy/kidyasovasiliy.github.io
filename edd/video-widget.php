@@ -16,6 +16,9 @@
             <!-- /.col -->
             <div class="col-md-auto d-flex justify-content-center">
               <div class="youtube" id="q_th_D4VHC0" style="width:655px; height:403px;"></div>
+              <iframe style="display:none; width:655px; height:403px;" src="https://www.youtube.com/embed/q_th_D4VHC0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                <!-- Надо как-то сделать автоматическое воспроизведение -->
+              </iframe>
             </div>
             <!-- /.col-auto -->
             <div class="col"></div>

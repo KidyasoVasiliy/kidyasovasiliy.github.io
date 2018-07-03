@@ -32,6 +32,9 @@
       &#169; 2018 «MY WEDDING» Все права защищены
     </footer>
     <!-- /.footer -->
-      
+
+    
+    <!-- Scripts -->
+    <script src="dist-js/builder.js"></script>
   </body>
 </html>
