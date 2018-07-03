@@ -13,7 +13,12 @@
           </div>
           <!-- /.section-subtitle -->
           <div class="row justify-content-center">
+              <div class="arrow-book-blok arrow-photo-blok">
+                <div class="arrow1"><img src="images/left-arrow.svg"></div>
+                <div class="arrow2"><img src="images/left-arrow.svg"></div>
+              </div>
             <div class="image-box-guest">
+
               <div class="image-box-1">
                 <img src="img/section7/slider.jpeg" alt>
               </div>

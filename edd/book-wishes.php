@@ -20,6 +20,10 @@
           <!-- ./row -->
           <div class="row justify-content-center">
             <div class="book-block">
+              <div class="arrow-book-blok">
+                <div class="arrow1"><img src="images/left-arrow.svg"></div>
+                <div class="arrow2"><img src="images/left-arrow.svg"></div>
+              </div>
               <div class="slider-book">
                 <div class="a-slide-book slide-book-1"></div>
                 <div class="a-slide-book slide-book-2"></div>
@@ -35,6 +39,24 @@
                 <div class="a-slide-book slide-book-12"></div>
                 <div class="a-slide-book slide-book-13"></div>
               </div>  
+              <div class="wrap-book-slider">
+                  <div class="slider-dots slider-book-dots">
+                    <div class="dot dot-active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+              </div>
+              
               <div class="book-block__item book-block__item-1" id="first">
                 <div class="book-block__pretitle d-flex justify-content-center align-items-center">
                   <div class="line-left"></div>

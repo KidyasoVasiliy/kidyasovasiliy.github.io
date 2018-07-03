@@ -3,6 +3,10 @@ import navigation from './parts/navigation/navigation.js';
 import editingACard from './parts/editingACard/editingACard.js';
 import guestList from './parts/guestList/guestList.js';
 import videoWidget from './parts/videoWidget/videoWidget.js';
+import bookWishesSlider from './parts/bookWishes/bookWishesSlider.js';
+import bookWishesTabs from './parts/bookWishes/bookWishesTabs.js';
+import sendingWishes from './parts/bookWishes/sendingWishes.js';
+import guestbook from './parts/guestbook/guestbook.js';
 navigation();
 	switch (window.location.pathname) {
 		case '/site-builder.php':
@@ -18,19 +22,18 @@ navigation();
 			// navigationActiveTab(3)
 			break;			
 		case '/book-wishes.php':
-			// navigationActiveTab(8)
+			bookWishesSlider();
+			bookWishesTabs();
+			sendingWishes();
 			break;
 		case '/letter-guests.php':
 			// navigationActiveTab(10)
 			break;
 		case '/photo-guests.php':
-			// navigationActiveTab(13)
+			guestbook();
 			break;
 		case '/video-widget.php':
-			videoWidget()
-			break;
-		default:
-			// statements_def
+			videoWidget();
 			break;
 	}
 
