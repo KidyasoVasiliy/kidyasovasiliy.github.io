@@ -32,19 +32,19 @@ function scrollHeader() {
 
 
 
-	headerButtonMouse.onclick =  () =>{			// клик на mouse 
-		event.preventDefault();					// снимает стандартное событие браузера
-		requestAnimationFrame(myAnimated);		// запускаем анимацию
-		startPos = 0;							// обнуляем стартовую позицию, чтобы не накапливалось
-	};
+	// headerButtonMouse.onclick =  () =>{			// клик на mouse 
+	// 	event.preventDefault();					// снимает стандартное событие браузера
+	// 	requestAnimationFrame(myAnimated);		// запускаем анимацию
+	// 	startPos = 0;							// обнуляем стартовую позицию, чтобы не накапливалось
+	// };
 
-	function myAnimated(){								// funс нашей анимации на mouse
-		startPos += 0.5;								// накапливаем стартовую поцизию по 0.5
-		window.scrollTo(0,window.scrollY+startPos); 	// прибавляем к нашей позиции startPos
-		move = requestAnimationFrame(myAnimated);		// запускаем снова анимацию
-		if(window.scrollY>900){							// работает до тех пор, пока мы не оказались на 900px вниз от начала документа
-			cancelAnimationFrame(move);					// как только дошли до 900px останавливаем нашу анимацию
-		}
-	}
+	// function myAnimated(){								// funс нашей анимации на mouse
+	// 	startPos += 0.5;								// накапливаем стартовую поцизию по 0.5
+	// 	window.scrollTo(0,window.scrollY+startPos); 	// прибавляем к нашей позиции startPos
+	// 	move = requestAnimationFrame(myAnimated);		// запускаем снова анимацию
+	// 	if(window.scrollY>900){							// работает до тех пор, пока мы не оказались на 900px вниз от начала документа
+	// 		cancelAnimationFrame(move);					// как только дошли до 900px останавливаем нашу анимацию
+	// 	}
+	// }
 }
 export default scrollHeader;

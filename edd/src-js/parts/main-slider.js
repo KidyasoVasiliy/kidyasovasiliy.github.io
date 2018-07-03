@@ -34,18 +34,41 @@ function mainSlider() {
 			showSlides(slideIndex = n);
 		}
 
+		let timer;
 		function autoSlide(){
-			setTimeout( () => {
-				plusSliders(1);
-			}, 3000);
-			setTimeout(autoSlide, 3000);
+			plusSliders(1)
+			timer = setTimeout(autoSlide, 3000);
+			console.log(1)
 		}
-		autoSlide();
+		setTimeout(autoSlide, 3000);
 
 		dotsWrap.addEventListener('click', function(event) {
 			for (let i = 0; i < dot.length + 1; i++) {
 				if (event.target.classList.contains('dot') && event.target == dot[i-1]) currentSlide(i);
 			}
 		});	
+
+		
+		//для хрома
+		window.onresize = function(event) {
+	        if(screen.width < 1000){
+				clearTimeout(timer)
+				document.querySelector('.wrap-dots').style.display = 'none';
+			} else {
+				// setTimeout(autoSlide, 3000);
+				document.querySelector('.wrap-dots').style.display = 'block';
+			}
+	    }
+	    // для остальных браузеров
+	    if (window.innerWidth<1000) {
+	    	clearTimeout(timer)
+			document.querySelector('.wrap-dots').style.display = 'none';
+	    } else {
+	    	document.querySelector('.wrap-dots').style.display = 'block';
+	    }
+
+
+
+
 }
 export default mainSlider;

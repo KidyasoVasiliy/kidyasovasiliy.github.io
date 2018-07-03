@@ -55,13 +55,14 @@ function editingACard(){
 		document.body.style.overflow = '';
 		overlay.style.display = 'none';
 	}
-	overlay.onclick = (e) => {
-		if (e.path.length===5) {  
-			closePopupFunc()
-			  createAnInvitation()
-			  console.log(document.querySelector('.invitation-block__title').innerHTML)
+
+	document.body.addEventListener('click', function(event) {
+		if (event.target.classList.contains('overlayNew')){
+			closePopupFunc();
+			createAnInvitation()
 		}
-	}
+	});
+
 	let clearCardBtn = document.querySelector('.choice .choice__btns .choice__btn-4')
 		clearCardBtn.onclick = () => {
 			document.querySelector('.invitation-block__pretitle').innerHTML = 'Приглашаем Вас на торжество по случаю нашего бракосочетания';
@@ -71,6 +72,3 @@ function editingACard(){
 		}
 }
 export default editingACard;
-
-
-

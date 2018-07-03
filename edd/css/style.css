@@ -4359,12 +4359,15 @@ svg:active {
 /*-----------------------инпуты для заполнения приглашений-----------------------*/
 /*Стрелочка*/
 .arrow-book-blok{
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 106%;
   position: absolute;
   z-index: 99;
@@ -4388,10 +4391,14 @@ svg:active {
   cursor: pointer;
 }
 .arrow1, .arrow2{
+  -webkit-transition: .2s;
+  -o-transition: .2s;
   transition: .2s;
 }
 .arrow-book-blok .arrow2 img{
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 /*Точки слайдера поздравлений*/
 .wrap-book-slider {
@@ -4399,13 +4406,19 @@ svg:active {
   bottom: -30px;
 }
 .wrap-book-slider .slider-book-dots{
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .wrap-book-slider .slider-book-dots .dot{
   margin: 2px;

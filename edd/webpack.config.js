@@ -10,8 +10,6 @@ let conf = {
 	devServer : {
 		overlay : true
 	},
-	watch: true,
-	devtool: 'eval',
 	module: {
 		rules: [
 			{
@@ -20,7 +18,9 @@ let conf = {
 				// exclude : '/node_modules'
 			}
 		]
-	}
+	},
+	watch: true,
+	devtool: 'cheap-eval-source-map'
 };
 
 module.exports = conf; 

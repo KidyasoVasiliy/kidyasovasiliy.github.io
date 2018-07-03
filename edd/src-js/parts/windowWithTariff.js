@@ -45,11 +45,20 @@ function windowWithTariff() {
 		overlayThankYou.style.display = 'none';
  		document.body.style.overflow = '';		
 	}
+
 	function eventOutside() {   					// func Закрываем форму, если клик вне формы
-		overlayThankYou.onclick = (e) => {
-			if (e.path.length===5) { closeForm(); }
-		};
+		document.body.addEventListener('click', function(e) {
+			if (e.target.classList.contains('js-overlay-thank-you')){
+				closeForm();
+			}
+		});
 	}
+
+	// проверка оверлея
+	// document.body.addEventListener('click', function(e) {
+	// 	console.log(e)
+	// 	console.log(e.target)
+	// });
 
 
 	function zeroAjax(){

@@ -10,17 +10,17 @@ let conf = {
 	devServer : {
 		overlay : true
 	},
-	// module: {
-	// 	rules: [
-	// 		{
-	// 			test: /\.js$/,
-	// 			loader: 'babel-loader'
-	// 			// exclude : '/node_modules'
-	// 		}
-	// 	]
-	// },
+	module: {
+		rules: [
+			{
+				test: /\.js$/,
+				loader: 'babel-loader'
+				// exclude : '/node_modules'
+			}
+		]
+	},
 	watch: true,
-	devtool: 'eval'
+	devtool: 'cheap-eval-source-map'
 };
 
 module.exports = conf; 
