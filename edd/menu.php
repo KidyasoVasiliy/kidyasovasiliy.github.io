@@ -100,7 +100,7 @@
       <!-- /.anchor -->
     </li>
     <li>
-      <a class="anchor" id="verticallink3" href="location.php" onClick="MyFunction();return false;">
+      <a class="anchor" id="verticallink3" href="location.html" onClick="MyFunction();return false;">
         <div class="navigation-block">
           <div class="navigation-block__img">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24" height="30" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">

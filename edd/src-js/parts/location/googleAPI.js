@@ -55,3 +55,15 @@
 // google.maps.event.addDomListener(window, 'load', initialize);
 // }
 // export default googleAPI;
+
+
+// function  googleAPI(){
+//       var map;
+//       function initMap() {
+//         map = new google.maps.Map(document.getElementById('mapGoogle'), {
+//           center: {lat: -34.397, lng: 150.644},
+//           zoom: 8
+//         });
+//       }
+// }
+// export default googleAPI;

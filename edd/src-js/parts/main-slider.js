@@ -38,7 +38,6 @@ function mainSlider() {
 		function autoSlide(){
 			plusSliders(1)
 			timer = setTimeout(autoSlide, 3000);
-			console.log(1)
 		}
 		setTimeout(autoSlide, 3000);
 
@@ -66,9 +65,6 @@ function mainSlider() {
 	    } else {
 	    	document.querySelector('.wrap-dots').style.display = 'block';
 	    }
-
-
-
 
 }
 export default mainSlider;

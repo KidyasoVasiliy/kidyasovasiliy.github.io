@@ -1,10 +1,10 @@
 let path = require('path');
 
 let conf = {
-	entry : './src-js/index.js',
+	entry : './src-js/builder.js',
 	output : {
 		path : path.resolve(__dirname, './dist-js/'),
-		filename : 'main.js',
+		filename : 'builder.js',
 		publicPath : 'dist-js/'
 	},//default sitting 
 	devServer : {
