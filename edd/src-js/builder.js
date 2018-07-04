@@ -7,7 +7,10 @@ import bookWishesSlider from './parts/bookWishes/bookWishesSlider.js';
 import bookWishesTabs from './parts/bookWishes/bookWishesTabs.js';
 import sendingWishes from './parts/bookWishes/sendingWishes.js';
 import guestbook from './parts/guestbook/guestbook.js';
+import mobileMenu from './parts/mobileMenu/mobileMenu.js';
+import letterToGuests from './parts/letterToGuests/letterToGuests.js';
 navigation();
+mobileMenu();
 	switch (window.location.pathname) {
 		case '/site-builder.php':
 			backgroundSelection();
@@ -27,7 +30,7 @@ navigation();
 			sendingWishes();
 			break;
 		case '/letter-guests.php':
-			// navigationActiveTab(10)
+			letterToGuests();
 			break;
 		case '/photo-guests.php':
 			guestbook();

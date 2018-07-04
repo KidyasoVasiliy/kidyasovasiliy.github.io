@@ -5,9 +5,7 @@ function navigation(){
 
 
 	function navigationActiveTab(i){
-		navigationBorder[i].style.borderLeft = '3px solid #fa7a95';
-		navigationImg[i].style.backgroundColor = '#333333';
-		navigationSvg[i].style.fill  = '#fff';
+		document.querySelectorAll('#navigation li')[i].classList.add('active');
 	}
 
 	switch (window.location.pathname) {
