@@ -1,4 +1,7 @@
 Portfolio
+Кидясов Василий
+https://vk.com/id153098272
+Технологии: HTML, CSS, Less/Sass, JavaScript, ES6, Ajax, npm, Gulp, Webpack, Git
 
 1) Дипломный проект
 
